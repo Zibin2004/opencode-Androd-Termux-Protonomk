@@ -197,10 +197,10 @@ pkg uninstall opencode2
 В репозитории лежит `publish.sh` — загрузка файлов через GitHub REST API:
 
 ```bash
-GITHUB_TOKEN=github_pat_... ./publish.sh          # install.sh README.md LICENSE
+GITHUB_TOKEN=github_pat_... ./publish.sh          # install.sh README.md LICENSE publish.sh
 ```
 
-Токен должен быть fine-grained PAT с правом **Contents: Read and write** на этот репозиторий.
+Токен должен быть fine-grained PAT с правом **Contents: Read and write** на этот репозиторий (подойдёт и classic PAT со scope `repo`/`public_repo`).
 
 ## Лицензия
 
